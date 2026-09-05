@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Power BI | Gilmar Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <header class="header">
+        <button class="logo" onclick="window.location.href='index.2.0.html'">Gilmar<span>.</span></button>
+        <nav class="nav">
+            <button onclick="window.location.href='index.2.0.html#home'">Home</button>
+            <button onclick="window.location.href='index.2.0.html#projetos'" class="active">Projetos</button>
+            <button onclick="window.location.href='index.2.0.html#sobre'">Sobre</button>
+            <button onclick="window.location.href='index.2.0.html#contato'">Contato</button>
+        </nav>
+        <button class="btn-tema" id="btnTema" aria-label="Alterar tema">💡</button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="app">
+        <section class="screen active" style="display: block !important;">
+            
+            <div style="max-width: 1000px; margin: 0 auto;">
+
+                <!-- CABEÇALHO DA PÁGINA -->
+                <div class="screen-header">
+                    <span>PROJETO / POWER BI</span>
+                    <h1>Power BI</h1>
+                    <p>
+                        Realizei recentemente o curso de Power BI pela Udemy. 
+                        Aqui, compartilho o certificado de conclusão e os projetos desenvolvidos durante o curso.
+                    </p>
+                </div>
+
+                <!-- SEÇÃO 01: CERTIFICADO -->
+                <div class="section-title">
+                    <span>01 / CERTIFICADO</span>
+                    <h2>Certificado de conclusão</h2>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 60px;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                        <div style="flex: 1; min-width: 280px;">
+                            <img 
+                                src="Pasta Bi/Certificado_POwerBi.jpeg" 
+                                alt="Certificado do curso de Power BI" 
+                                style="width: 100%; border-radius: 12px; border: 1px solid #1e293b;"
+                            >
+                        </div>
+                        <div style="flex: 1; min-width: 280px;">
+                            <span class="project-type">CERTIFICAÇÃO UDEMY</span>
+                            <h2 style="margin: 10px 0 15px;">Power BI</h2>
+                            <p style="color: #94a3b8; line-height: 1.7; margin-bottom: 25px;">
+                                Curso realizado com foco na criação de dashboards, tratamento de dados com Power Query, modelagem e visualização de informações estratégicas.
+                            </p>
+                            <a 
+                                href="Pasta Bi/Certificado_POwerBi.jpeg" 
+                                target="_blank" 
+                                class="primary-btn"
+                            >
+                                Visualizar certificado PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO 02: PROJETOS -->
+                <div class="section-title">
+                    <span>02 / PROJETOS</span>
+                    <h2>Projetos desenvolvidos</h2>
+                </div>
+
+                <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 50px;">
+                    
+                    <!-- PROJETO 01 -->
+                    <article class="project-card">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="project-number">01</span>
+                                <span class="project-type">POWER BI</span>
+                            </div>
+                            <h2>Dashboard de Vendas</h2>
+                            <p>
+                                Dashboard em desenvolvimento...
+                            </p>
+                            <div class="tech-list">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>Excel</span>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank" class="project-link">Ver dashboard →</a>
+                    </article>
+
+                    <!-- PROJETO 02 -->
+                    <article class="project-card">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="project-number">02</span>
+                                <span class="project-type">ANÁLISE</span>
+                            </div>
+                            <h2>Análise de Dados</h2>
+                            <p>
+                                Em desenvolvimento...
+                            </p>
+                            <div class="tech-list">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>Power Query</span>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank" class="project-link">Ver dashboard →</a>
+                    </article>
+
+                </div>
+
+                <!-- BOTÃO VOLTAR -->
+                <div style="margin-top: 40px;">
+                    <a href="index.2.0.html" class="secondary-btn">
+                        ← <strong>Voltaar para a página inicial </strong>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Gilmar Santos. Todos os direitos reservados.</p>
+        <button class="back-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Voltar ao topo</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
