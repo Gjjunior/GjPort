@@ -1633,8 +1633,15 @@ body.light footer {
     min-height: auto;
     padding: 20px;
     text-align: center;
+    align-items: center;   
 }
 
 .cert-card > div {
     justify-content: center;
+}
+
+.cert-card .primary-btn {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 14px;
 }
