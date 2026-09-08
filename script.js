@@ -63,23 +63,26 @@ navigationButtons.forEach(function(button) {
 
 const btnTema = document.getElementById("btnTema");
 
+if (btnTema) {
 
-btnTema.addEventListener("click", function() {
+    btnTema.addEventListener("click", function() {
 
-    document.body.classList.toggle("light");
+        document.body.classList.toggle("light");
 
 
-    if (document.body.classList.contains("light")) {
+        if (document.body.classList.contains("light")) {
 
-        btnTema.textContent = "☀";
+            btnTema.textContent = "☀";
 
-    } else {
+        } else {
 
-        btnTema.textContent = "☾";
+            btnTema.textContent = "☾";
 
-    }
+        }
 
-});
+    });
+
+}
 
 
 /* ================= TECLA ESC ================= */
@@ -97,8 +100,6 @@ document.addEventListener("keydown", function(event) {
 
 /* ================= INÍCIO ================= */
 
-/* ================= INÍCIO ================= */
-
 function telaInicial() {
     const hash = window.location.hash.replace("#", "");
     const telaValida = hash && document.getElementById(hash);
@@ -110,4 +111,4 @@ function telaInicial() {
     }
 }
 
-telaInicial();
+telaInicial(); 
