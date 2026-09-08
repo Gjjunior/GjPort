@@ -97,4 +97,17 @@ document.addEventListener("keydown", function(event) {
 
 /* ================= INÍCIO ================= */
 
-abrirTela("home");
+/* ================= INÍCIO ================= */
+
+function telaInicial() {
+    const hash = window.location.hash.replace("#", "");
+    const telaValida = hash && document.getElementById(hash);
+
+    if (telaValida) {
+        abrirTela(hash);
+    } else {
+        abrirTela("home");
+    }
+}
+
+telaInicial();

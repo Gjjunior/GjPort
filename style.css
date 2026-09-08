@@ -916,7 +916,7 @@ body {
 
 .project-card {
 
-    min-height: 430px;
+    min-height: 280px;
 
     padding: 30px;
 
@@ -1325,79 +1325,142 @@ footer {
 
 /* ================= TEMA CLARO ================= */
 
+/* ================= TEMA CLARO ================= */
+
 body.light {
-
-    background:
-        #f8fafc;
-
-    color:
-        #0f172a;
+    background: #f8fafc;
+    color: #0f172a;
 }
-
 
 body.light .header {
-
-    background:
-        rgba(248,250,252,0.8);
-
-    border-color:
-        #e2e8f0;
+    background: rgba(248, 250, 252, 0.9);
+    border-color: #e2e8f0;
 }
-
 
 body.light .logo,
 body.light .nav button {
-
-    color:
-        #0f172a;
+    color: #0f172a;
 }
 
-
-body.light .nav button:hover {
-
-    color:
-        #2563eb;
+body.light .nav button:hover,
+body.light .nav button.active {
+    color: #1d4ed8;
 }
 
+body.light .nav button::after,
+body.light .nav button.active::after {
+    background: #1d4ed8;
+}
+
+body.light .btn-tema {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #0f172a;
+}
 
 body.light .home-description,
 body.light .screen-header p,
-body.light .sobre-text p {
-
-    color:
-        #475569;
+body.light .sobre-text p,
+body.light .curiosity-card p,
+body.light .project-card p,
+body.light .skill-card p,
+body.light .timeline-item p {
+    color: #334155;
 }
-
 
 body.light .curiosity-card,
 body.light .project-card,
 body.light .skill-card,
 body.light .contact-links a,
 body.light .curriculo-box {
-
-    background:
-        white;
-
-    border-color:
-        #e2e8f0;
+    background: #ffffff;
+    border-color: #e2e8f0;
 }
-
 
 body.light .curiosity-card h3,
 body.light .project-card h2,
-body.light .skill-card h2 {
-
-    color:
-        #0f172a;
+body.light .skill-card h2,
+body.light .curriculo-box h2,
+body.light .timeline-item h3 {
+    color: #0f172a;
 }
-
 
 body.light .contact-links strong {
-
-    color:
-        #0f172a;
+    color: #0f172a;
 }
 
+body.light .curiosity-number,
+body.light .project-number {
+    color: #94a3b8;
+}
+
+/* Labels decorativas: cinza-escuro neutro */
+body.light .eyebrow,
+body.light .section-title span,
+body.light .screen-header span,
+body.light .home-navigation span,
+body.light .project-type,
+body.light .curriculo-label,
+body.light .skill-card > span,
+body.light .timeline-item > span {
+    color: #475569;
+}
+
+/* Elementos clicáveis: azul escurecido, contraste real */
+body.light .home-text h1 strong,
+body.light .project-link,
+body.light .back-top,
+body.light .contact-content > span {
+    color: #1d4ed8;
+}
+
+body.light .project-link:hover {
+    color: #0f172a;
+}
+
+body.light .project-link.disabled {
+    color: #94a3b8;
+}
+
+/* Bug: botões da home tinham texto branco fixo, ficava invisível */
+body.light .home-navigation button,
+body.light .home-navigation strong {
+    color: #0f172a;
+}
+
+body.light .home-navigation small {
+    color: #64748b;
+}
+
+body.light .home-navigation b {
+    color: #94a3b8;
+}
+
+body.light .home-navigation,
+body.light .home-navigation button {
+    border-color: #e2e8f0;
+}
+
+/* Botão "Conheça minha história" */
+body.light .secondary-btn {
+    color: #334155;
+    border-color: #94a3b8;
+}
+
+body.light .secondary-btn:hover {
+    color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+body.light .tech-list span {
+    background: #eef2f7;
+    color: #334155;
+}
+
+body.light footer {
+    color: #64748b;
+    border-color: #e2e8f0;
+}
 
 /* ================= RESPONSIVO ================= */
 
@@ -1565,4 +1628,13 @@ body.light .contact-links strong {
         text-align: center;
     }
 
+}
+.cert-card {
+    min-height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cert-card > div {
+    justify-content: center;
 }
